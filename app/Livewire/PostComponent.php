@@ -33,6 +33,7 @@ class PostComponent extends Component
         ]);
         session()->flash('success','Post created successfully.');
         $this->closeModal();
+        $this->reset('title','description');
     }
 
     public function edit($id)
